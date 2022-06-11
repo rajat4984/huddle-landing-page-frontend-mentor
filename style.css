@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--Violet);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+}
+
+.img-container {
+  background: url(./images/bg-mobile.svg) no-repeat center/cover;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 40%;
+  margin-bottom: 4em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title,
+.desc {
+  color: white;
+  padding: 0 1.5em;
+  margin-bottom: 1em;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+}
+
+.desc {
+  line-height: 1.5;
+  color: rgb(218, 218, 218);
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  padding: 0.8em 5.5em;
+  box-shadow: 0px 2px 5px rgba(26, 26, 26, 0.836);
+  border: none;
+  border-radius: 50px;
+  color: var(--Violet);
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+i {
+  color: white;
+  margin: 2em 1em;
+  border: 1px solid white;
+  padding: 0.5em;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--Soft-Magenta);
+}
+
+i:hover {
+  color: var(--Soft-Magenta);
+  border: 1px solid var(--Soft-Magenta);
+}
+
+@media (min-width: 550px) {
+  .container {
+    background: url(./images/bg-desktop.svg) no-repeat center/cover;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .title,
+  .desc{
+    padding: 0em;
+    margin-bottom: 1em;
+  }
+  .flex-item {
+    display: block;
+  }
+
+  .hero-img{
+      width: 50em;
+  }
+
+  i {
+    margin: 0em;
+    padding: 0.5em;
+    font-size: 1.3rem;
+  }
+  
+  .img-container {
+    background: url("");
+    display: block;
+    padding: 2.5em 3.5em;
+  }
+
+  .btn{
+      margin: 2em 0;
+  }
+
+  .logo {
+    width: 30%;
+    margin-bottom: 4em;
+  }
+}
+
+.attribution {
+  color: white;
+  margin: 2em;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: black;
+}
